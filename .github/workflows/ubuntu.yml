@@ -20,7 +20,7 @@ jobs:
         run: apt-get update && apt-get -y install ${dependency_packages}
 
       - name: Build
-        run: meson build && ninja -C build
+        run: meson build --prefix=/usr && ninja -C build
         
       - name: AppImage
         run: |
