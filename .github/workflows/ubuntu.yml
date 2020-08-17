@@ -16,7 +16,7 @@ jobs:
 
       - name: Install Depedencies
         env:
-          dependency_packages: libvala-dev valac meson libgtk-3-dev libsoup-gnome2.4-dev appstream elementary-theme elementary-icon-theme libgtk-3-common
+          dependency_packages: libvala-dev valac meson libgtk-3-dev libsoup-gnome2.4-dev wget appstream elementary-theme elementary-icon-theme libgtk-3-common
         run: apt-get update && apt-get -y install ${dependency_packages}
 
       - name: Build
