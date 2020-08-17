@@ -36,5 +36,5 @@ e = executable('biru',
     sources: sources,
     c_args: c_args,
     dependencies: dependencies,
-    install : false
+    install : true
 )
